@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Aleatorio</title>
+    <script src="ejercicio-09.js" defer></script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: #1a1a2e;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #ffcb05;
+            text-shadow: 2px 2px 0 #3d7dca;
+        }
+
+        #pokemon-name {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #ccc;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+        }
+
+        .random-image {
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+            image-rendering: pixelated;
+        }
+
+        p.hint {
+            margin-top: 16px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pokemon Aleatorio</h1>
+    <p id="pokemon-name">Cargando...</p>
+    <img class="random-image" alt="Pokemon aleatorio">
+    <p class="hint">Recarga la página para un nuevo Pokemon</p>
+</body>
+</html>
